@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    float: left;
+    width: 100%;
+    padding: 15px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    background-color: #1abc9c;
+    box-sizing: border-box;
+}
+
+header>h1, footer>h4 {
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+footer>h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+footer>h4 {
+    text-align: right;
+}
+
+article{
+    width: 100%;
+    float: left;
+    background-color: 	#E0E0E0;
+    padding-top: 20px;
+    padding-bottom: 25px; 
+    box-sizing: border-box;
+    padding-left:15px; 
+    padding-right:15px; 
+}
+
+#main-block {
+    width: 100%;
+    float: left;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.block {
+    display: inline-block;
+    width: 23%;
+    height: 150px;
+    overflow: auto;
+    border:1px solid white;
+    background-color: white;  
+    border-radius: 20px/10px;
+    padding:10px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-left: 4px; 
+}
+
+.block:hover{
+    z-index: 2;
+    height:auto;
+    min-height: 150px;
+}
+
+@media(max-width:1000px){
+    .block {
+        width: 46%;
+    }  
+}
+
+
+@media(max-width:600px){
+    .block {
+        width: 92%;
+    }  
+}
+
+@media(min-width:2000px){
+    .block {
+        width: 16%;
+    }  
+}
+
+@media(min-width:2500px){
+    .block {
+        width: 12%;
+    }  
+}
+
+
+.block:hover{
+    transform: scale(1.1);
+    border:1px solid rgb(0, 255, 255);
+    cursor: pointer; 
+}
+
+
+#sort-block{
+    margin-bottom: 10px;
+}
+
+.sort{
+    float:right;
+    padding: 10px;
+    width: 30px;
+    margin-left: 5px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px; 
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 15px; 
+    text-align: center;
+}
+
+.sort:hover{
+    cursor: pointer;
+    border: 2px solid  #1abc9c; 
+}
+
+.sort:active{
+    transform: scale(0.9);
+}
+
+hr{
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    opacity: 0.6;
+    border-width: 1px;
+    border-color: grey;
+    border-style: solid;
+}
+
+.name{
+    text-align: left;
+     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+
+.price{
+    text-align: right;
+    margin-top: 5px; 
+    padding:5px; 
+    font-size: 21px;
+}
+
+.price-new {
+    color:rgba(252, 46, 31, 0.774);
+
+}
+
+.price-old{
+    text-decoration: line-through;  
+    padding-bottom: 0px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.review{
+    text-align: left;
+}
